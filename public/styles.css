@@ -1,0 +1,48 @@
+/* Custom styles for the navbar links */
+.nav-link {
+    color: #333 !important; /* Initial color */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+/* Hover effect for navbar links */
+.nav-link:hover, .nav-link:focus {
+    color: #fff !important; /* Darker color on hover */
+    background-color: #343a40; /* Bootstrap's dark shade for contrast */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for both color and background */
+}
+
+/* Additional styles to ensure contrast and visibility */
+.navbar {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 193, 7, 0.75); /* Adjusted for a more noticeable yellow, matching bg-warning with opacity */
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line if there's not enough space */
+    gap: 20px; /* Adds some space between the cards */
+    justify-content: center; /* Center cards horizontally */
+    padding: 20px; /* Add padding around the container for better spacing from the edges */
+}
+
+body {
+    background-image: url('bwseattle.png');
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background image fixed during scrolling */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Make sure the image covers the full height of the viewport */
+    margin: 0; /* Remove default margin */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+/* Ensure consistent styling for cards (if not already styled by a framework/library) */
+.card {
+    width: 100%; /* Full width in mobile view */
+    max-width: 320px; /* Maximum card width */
+    margin: auto; /* Center cards in the flex container */
+}
